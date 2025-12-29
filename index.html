@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Kuro Sushi | Japanese & Korean Cuisine in Shediac</title>
+    <meta name="description"
+        content="Kuro Sushi offers premium sushi and authentic Korean dishes in Shediac, NB. Dine-in, take-out, and delivery available. Fresh flavors, artistic presentation.">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kuro Sushi | Japanese & Korean Restaurant">
+    <meta property="og:description"
+        content="Authentic Japanese & Korean cuisine in the heart of Shediac. Fresh sushi, bento, and more.">
+    <meta property="og:image" content="assets/hero.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+
+    <header>
+        <div class="container top-bar">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Kuro Sushi Logo">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info-header">
+                <a href="#" class="dynamic-phone"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <img src="assets/logo.png" alt="Kuro Sushi Mobile Logo" class="mobile-hero-logo">
+                    <h1 id="hero-title"></h1>
+                    <p id="hero-sub"></p>
+                    <a href="#contact" class="primary-cta" id="hero-cta"></a>
+                </div>
+                <div id="hero-image-container"></div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="text-center">Our Full Menu</h2>
+
+                <!-- Category Filter Bar -->
+                <div class="menu-filters-container">
+                    <button class="filter-scroll-btn left" id="filter-scroll-left" aria-label="Scroll Left">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <nav class="menu-filters" id="menu-filters">
+                        <!-- Dynamic Filters -->
+                    </nav>
+                    <button class="filter-scroll-btn right" id="filter-scroll-right" aria-label="Scroll Right">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="menu-display-area">
+                    <div id="menu-categories">
+                        <!-- Dynamic Menu Content -->
+                    </div>
+                </div>
+
+                <p id="menu-footer-note" class="text-center"></p>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="services">
+            <div class="container text-center">
+                <h2>Our Services</h2>
+                <div class="grid-3" id="services-grid">
+                    <!-- Dynamic -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <div id="reviews-trust-cue" class="trust-cue"></div>
+                <div class="grid-3" id="reviews-grid">
+                    <!-- Dynamic -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us -->
+        <section id="why" class="why">
+            <div class="container">
+                <h2 class="text-center">Why Choose Us</h2>
+                <div class="why-grid" id="why-grid">
+                    <!-- Dynamic -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Order Now</h2>
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <form id="contact-form">
+                            <div style="display:none;">
+                                <input name="_gotcha">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-email">Phone or Email</label>
+                                <input type="text" id="phone-email" name="contact" required
+                                    placeholder="How can we reach you?">
+                            </div>
+                            <div class="form-group">
+                                <label for="order-type">Order Type</label>
+                                <select id="order-type" name="order_type">
+                                    <option value="Takeout">Takeout</option>
+                                    <option value="Delivery">Delivery</option>
+                                    <option value="Dine-In">Dine-In</option>
+                                    <option value="Other">Question / Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message / Order Notes</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Mention items you'd like to order or your question..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Request</button>
+                            <p id="form-status"></p>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-details">
+                        <p id="contact-address" style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;"></p>
+                        <a href="#" class="dynamic-phone"
+                            style="font-size: 1.1rem; color: var(--accent); font-weight: 700;"></a>
+
+                        <ul id="contact-hours">
+                            <!-- Dynamic -->
+                        </ul>
+
+                        <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                            <a href="" id="directions-btn" target="_blank" class="primary-cta"
+                                style="padding: 12px 24px; font-size: 0.9rem;">Get Directions</a>
+                        </div>
+
+                        <div class="map-container" style="margin-top: 2rem;">
+                            <iframe title="Kuro Sushi Location" width="100%" height="100%" frameborder="0"
+                                scrolling="no" marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?q=344%20Main%20St%20Shediac%20NB&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo">
+                        <img src="assets/logo.png" alt="Kuro Sushi Logo" style="height: 80px;">
+                    </a>
+                    <p id="footer-address" style="margin-top: 0.5rem; color: var(--text-muted);"></p>
+                    <p style="margin-top: 1rem;">
+                        <a href="" id="footer-fb" target="_blank">Follow us on Facebook</a>
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#why">Why Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Ready to eat?</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1rem;">Place your order or book a table.</p>
+                    <a href="#contact" class="primary-cta">Order Now</a>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px; font-size: 0.8rem; color: var(--text-muted); display: flex; justify-content: space-between;">
+                <span>&copy; 2025 Kuro Sushi. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="mobile-bottom-bar">
+        <div class="bottom-bar-grid">
+            <button class="bar-item" id="burger-trigger" style="background: none; border: none;">
+                <svg viewBox="0 0 100 100" class="kawaii-bottom-icon">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="6" />
+                    <line x1="30" y1="40" x2="70" y2="40" stroke="currentColor" stroke-width="6"
+                        stroke-linecap="round" />
+                    <line x1="30" y1="50" x2="70" y2="50" stroke="currentColor" stroke-width="6"
+                        stroke-linecap="round" />
+                    <line x1="30" y1="60" x2="70" y2="60" stroke="currentColor" stroke-width="6"
+                        stroke-linecap="round" />
+                    <circle cx="40" cy="50" r="3" fill="#3D3D3D" class="kawaii-eye" />
+                    <circle cx="60" cy="50" r="3" fill="#3D3D3D" class="kawaii-eye" />
+                </svg>
+                <span>Menu</span>
+            </button>
+            <a href="#" id="mobile-call-btn" class="bar-item">
+                <svg viewBox="0 0 100 100" class="kawaii-bottom-icon">
+                    <rect x="30" y="20" width="40" height="60" rx="10" fill="none" stroke="currentColor"
+                        stroke-width="6" />
+                    <circle cx="50" cy="70" r="5" fill="currentColor" />
+                    <circle cx="43" cy="45" r="3" fill="#3D3D3D" />
+                    <circle cx="57" cy="45" r="3" fill="#3D3D3D" />
+                    <path d="M47 52 q3 3 6 0" fill="none" stroke="#3D3D3D" stroke-width="2" stroke-linecap="round" />
+                    <circle cx="38" cy="47" r="4" fill="#FFB7C5" opacity="0.6" />
+                    <circle cx="62" cy="47" r="4" fill="#FFB7C5" opacity="0.6" />
+                </svg>
+                <span>Call</span>
+            </a>
+            <a href="#" id="mobile-message-btn" target="_blank" class="bar-item">
+                <svg viewBox="0 0 100 100" class="kawaii-bottom-icon">
+                    <path d="M20 30 Q20 20 30 20 L70 20 Q80 20 80 30 L80 60 Q80 70 70 70 L40 70 L20 85 Z" fill="none"
+                        stroke="currentColor" stroke-width="6" stroke-linejoin="round" />
+                    <circle cx="43" cy="45" r="3" fill="#3D3D3D" />
+                    <circle cx="57" cy="45" r="3" fill="#3D3D3D" />
+                    <path d="M47 52 q3 3 6 0" fill="none" stroke="#3D3D3D" stroke-width="2" stroke-linecap="round" />
+                    <circle cx="38" cy="47" r="4" fill="#FFB7C5" opacity="0.6" />
+                    <circle cx="62" cy="47" r="4" fill="#FFB7C5" opacity="0.6" />
+                </svg>
+                <span>Message</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Mobile Overlay Menu -->
+    <div id="mobile-overlay">
+
+        <div class="mobile-nav-links">
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="mobile-overlay-footer">
+            <p><strong>Kuro Sushi</strong></p>
+            <p id="overlay-phone" class="dynamic-phone"></p>
+            <p id="overlay-address">344 Main St, Shediac, NB</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
